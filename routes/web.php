@@ -11,6 +11,9 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
-});
+$router->get('start-import', [
+    'as' => 'profile', 'uses' => 'ItemsController@startImport'
+]);
+
+$router->get('/images/{file}', 'ItemsController@getImage');
+$router->get('/items', 'ItemsController@getAllItems');
