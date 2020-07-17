@@ -24,7 +24,8 @@ If you discover a security vulnerability within Lumen, please send an e-mail to 
 The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ## Deployment instructions
-1. Clone this project localy
+0. Copy and rename .env.example to .env and setup enviroment params
+1. Clone this project locally
 2. Run docker-compose up 
 3. Run docker exec -it <php container id> bash
     1. Run migrations php artisan migrate
